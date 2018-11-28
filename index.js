@@ -101,7 +101,7 @@ function recordScore(){
     var score = sessionStorage.getItem(parseInt('score'));
 
     var scoreElement =document.getElementById('score');
-    var currentScore = score + parseInt('10');
+    var currentScore = parseInt(score + 10);
     console.log('this is currentScore ' + currentScore)
     scoreElement.innerHTML = currentScore;
 
