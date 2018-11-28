@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body{
+   
+        font-family: 'Lora', serif;
+        background-color: antiquewhite;
+        font-size: 18px;
+        line-height: 1.5;
+        max-width: 640px;
+}
+
+.underline{
+    visibility: hidden;
+    text-decoration: underline;
+    padding: 0.5;
+    letter-spacing: 10px;
+}
+#gameword{
+    visibility: hidden;
+}
+
+.flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    max-width:300px;
+}
+
