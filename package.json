@@ -1,0 +1,19 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws s3 sync . s3://hangmangame --exclude *git/* --acl public-read"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soheimam/hangman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soheimam/hangman/issues"
+  },
+  "homepage": "https://github.com/soheimam/hangman#readme"
+}

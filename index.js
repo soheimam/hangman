@@ -103,6 +103,6 @@ function recordScore(){
     var scoreElement =document.getElementById('score');
     scoreElement.innerHTML = score + 10;
 
-    sessionStorage.setItem('score', 0)
+    sessionStorage.setItem('score', scoreElement.value)
 }
 
