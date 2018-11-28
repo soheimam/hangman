@@ -11,10 +11,13 @@ var underscores = []
 var correctGuess = []
 var attempts = 4
 
+//using math.random to generate a random integer we use to pick our word out of the array
 var randomNumber = Math.floor(Math.random() * words.length)
-var answerSection = document.getElementById('answer')
 
+var answerSection = document.getElementById('answer')
 var wordround = document.getElementById('gameword')
+
+// selecting a random word from the words array
 var gameWord = wordround.innerHTML = String(words[randomNumber]);
 
 console.log('this is gameWord' + gameWord)
@@ -93,12 +96,13 @@ function validateWin(underscores) {
    
 }
 
+//recording a user score
 function recordScore(){
     var score = sessionStorage.getItem('score');
 
     var scoreElement =document.getElementById('score');
     scoreElement.innerHTML = score + 10;
 
-    sessionStorage.setItem('score', "autosave")
+    sessionStorage.setItem('score', 0)
 }
 
