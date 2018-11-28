@@ -5,7 +5,8 @@ body{
         background-color: antiquewhite;
         font-size: 18px;
         line-height: 1.5;
-        max-width: 640px;
+        margin-top: 200px;
+        margin-bottom: 200px;
 }
 
 .underline{

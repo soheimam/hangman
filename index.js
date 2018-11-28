@@ -98,11 +98,13 @@ function validateWin(underscores) {
 
 //recording a user score
 function recordScore(){
-    var score = sessionStorage.getItem('score');
+    var score = sessionStorage.getItem(parseInt('score'));
 
     var scoreElement =document.getElementById('score');
-    scoreElement.innerHTML = score + 10;
+    var currentScore = score + parseInt('10');
+    console.log('this is currentScore ' + currentScore)
+    scoreElement.innerHTML = currentScore;
 
-    sessionStorage.setItem('score', scoreElement.value)
+    sessionStorage.setItem('currentScore', scoreElement.innerHTML)
 }
 
